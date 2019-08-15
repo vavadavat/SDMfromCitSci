@@ -44,7 +44,7 @@ covariates.prop.200$Income.mean <- covariates.prop.200$income
 cov.names.woodland <- c("est","TIME.OBSERVATIONS.STARTED.dec.hr","DURATION.MINUTES","EFFORT.DISTANCE.KM","log.house.km2","Income.mean","Lake","Pond","EmergentWL","ForestShrubWL","River","dev_vlow","dev_low","dev_med","dev_high","decid","evergr","mixed","shrub","grass","past.hay","crops","patch","perforated","edge","core","elev","slope","eness","nness")
 
 #MODEL FUNCTION
-source(paste0(r.dir,"Models_RF_function.v3.R"))
+source(paste0(r.dir,"Models_RF_function.Subsets.R"))
 
 
 ##LOOP OVER 10 LISTS OF RANDOM SUBSETS
