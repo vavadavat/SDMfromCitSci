@@ -18,7 +18,7 @@ out.dir <- "~/Project_Uconn/One/OneAnalysis/output/"
 r.dir <- "~/Project_Uconn/One/OneAnalysis/r/"
 
 #BIRD NAMES
-load(paste0(in.dir,"bird.names.Tidal.5prev.47spp.RData"))
+load(paste0(in.dir,"bird.names.sharp.5prev.47spp.RData"))
 bird.names<-birds.5prev;rm(birds.5prev)
 
 #DATA
@@ -28,7 +28,7 @@ birds <- ifelse(birds>0,1,0)
 dat.2014[,42:176] <- birds
 
 #cv.group 
-load(paste0(in.dir,"table.ids.forCV.tidalMarsh.RData"))
+load(paste0(in.dir,"table.ids.forCV.sharp.RData"))
 colnames(table.ids)[2] <- "IDgroup"
 dat.2014 <- merge(dat.2014,table.ids[,c("IDgroup","cv.group")],by="IDgroup")
 
