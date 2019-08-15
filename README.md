@@ -1,7 +1,7 @@
 # SDMfromCitSci
 Partial code and associated data files for publication
 
-Description of code files:
+# Description of code files:
 
 AIC.Lmm.Fcn.R Function called by LMM_call.function.R. Runs linear mixed effects models and returns AIC results for model comparison.
 
