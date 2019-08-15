@@ -1,6 +1,6 @@
 #DESCRIPTION: 10-fold Cross-validation tests 
 
-#DATE: 12/23/2017
+#DATE: 8/14/2019
 
 
 library(randomForest)
@@ -41,6 +41,7 @@ site.uni.sort$group <- rep(splits,2)
 #STORAGE LISTS
 eval.train.list <- list()
 eval.test.list <- list()
+
 for (j in 1:length(bird.names)){
  y.dat <- dat[,colnames(dat)%in%bird.names[j]]
  y.dat <- ifelse(y.dat>0,1,0)
@@ -56,6 +57,7 @@ for (j in 1:length(bird.names)){
   eval.train <- NULL
   eval.test.list[[j]] <- 1
   eval.test <- NULL
+ 
 for(i in 1:10){
   testData[[i]] <- x.y.dat[x.y.dat$SITE %in% site.uni.sort[which(site.uni.sort$group %in% i),1],]
   trainData[[i]] <- x.y.dat[!x.y.dat$SITE %in% site.uni.sort[which(site.uni.sort$group %in% i),1],]
