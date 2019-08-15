@@ -1,4 +1,4 @@
-#DESCRIPTION: 10-fold Cross-validation tests. Runs now for all 5 prevalence species.
+#DESCRIPTION: 10-fold Cross-validation tests.
 
 #DATE: 6/4/2018
 
