@@ -18,7 +18,6 @@ out.dir <- "~/Project_Uconn/One/OneAnalysis/output/"
 r.dir <- "~/Project_Uconn/One/OneAnalysis/r/"
 
 #TEST DATA
-load(paste0(in.dir,"bird.names.woodland.5percentPrevalence.RData"))#bird names with min. 5% prevalence
 load(paste0(in.dir,"BBS.dat.all.200m.RData"))
 BBS.dat.all <- BBS.dat.all.200m;rm(BBS.dat.all.200m)
 BBS.dat.all <- rename(BBS.dat.all,eness=e.ness,nness=n.ness)
