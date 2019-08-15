@@ -21,8 +21,7 @@ r.dir <- "~/Project_Uconn/One/OneAnalysis/r/"
 ##TEST DATA
 load(paste0(in.dir,"BBS.dat.all.200m.RData"))
 BBS.dat.all <- BBS.dat.all.200m;rm(BBS.dat.all.200m)
-BBS.dat.all <- rename(BBS.dat.all,eness=e.ness)
-BBS.dat.all <- rename(BBS.dat.all,nness=n.ness)
+BBS.dat.all <- rename(BBS.dat.all,eness=e.ness,nness=n.ness)
 
 #5 PREVALENCE
 colnames(BBS.dat.all)
