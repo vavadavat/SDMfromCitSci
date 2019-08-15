@@ -44,13 +44,13 @@ covariates.prop.200$forest <- rowSums(covariates.prop.200[,c("decid","evergr","m
 covariates.prop.200$low.veg <- rowSums(covariates.prop.200[,c("shrub","grass","past.hay")])
 
 ##COVARIATE NAMES
-cov.names.tidal <- c("est","rowname","TIME.OBSERVATIONS.STARTED.dec.hr","DURATION.MINUTES","EFFORT.DISTANCE.KM","dev_vlow","dev_low","dev_med","dev_high","forest","low.veg","crops","HighMarsh","LowMarsh","Mudflat","Phragmites","Pool_Panne","EstuarineMarineWetland","EstuarineMarineDeep")
+cov.names.sharp <- c("est","rowname","TIME.OBSERVATIONS.STARTED.dec.hr","DURATION.MINUTES","EFFORT.DISTANCE.KM","dev_vlow","dev_low","dev_med","dev_high","forest","low.veg","crops","HighMarsh","LowMarsh","Mudflat","Phragmites","Pool_Panne","EstuarineMarineWetland","EstuarineMarineDeep")
 
 ##CALL FUNCTION
-source(paste0(r.dir,"Models_RF_function.v3.R"))
+source(paste0(r.dir,"Models_RF_function.Subsets.R"))
 
 ##EXAMPLE
-tidal.sharp <- run.models(covariates=covariates.prop.200,cov.names=cov.names.tidal,bird.names=birds.5prev,training.list=group.subset.thin,test.dat=dat.2014)
+tidal.sharp <- run.models(covariates=covariates.prop.200,cov.names=cov.names.sharp,bird.names=birds.5prev,training.list=group.subset.thin,test.dat=dat.2014)
 
 ##SAVE RESULT
 save.name<- "tidal.sharp.200mTrain.200mTest"
