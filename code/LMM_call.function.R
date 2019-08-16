@@ -24,8 +24,6 @@ source(paste0(r.dir,"AIC.Lmm.Fcn.R"))
 ############
 ####SHARP
 ############
-
-##bestmodels
 tm.dat <- dat[which(dat$group %in% "sharp"),]
 tm.dat <- droplevels(tm.dat) 
 AIC.LMM.Fcn(tm.dat)
