@@ -1,13 +1,6 @@
 # SDMfromCitSci
 Partial code and associated data files for publication
 
-*Description of tasks and associated code files (.R files):*
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
 TASK
 1. Assess model performance for 4 benchmark datasets (Askins, BBS, Klingbeil, and SHARP) using cross-validated (assess model performance on data withheld from model building) AUC results.
   * Askins.Models.CV.R: Runs cross-validation on Askins data.
